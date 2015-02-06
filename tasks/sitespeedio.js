@@ -9,50 +9,55 @@
 
 module.exports = function(grunt) {
 
-  grunt.registerMultiTask('sitespeedio', 'Analyze you sites performance', function() {
+	grunt.registerMultiTask('sitespeedio', 'Analyze you sites performance', function() {
 
-    // TODO what default output directory should we have?
-    var options = this.options({});
+		var tmp = require('temporary');
+		var dir = new tmp.Dir();
 
-    var done = this.async();
+		var options = this.options({
+			resultBaseDir: dir.path
+		});
 
-    var Sitespeed = require('sitespeed.io/lib/sitespeed');
-    var sitespeed = new Sitespeed();
+		var done = this.async();
 
-    sitespeed.run(options, function(err, data) {
+		var Sitespeed = require('sitespeed.io/lib/sitespeed');
+		var sitespeed = new Sitespeed();
 
-      // lets get the budget!
-      if (data && data.budget) {
+		sitespeed.run(options, function(err, data) {
+
+			// lets get the budget!
+			if (data && data.budget) {
 
 				grunt.log.ok('------------------------------------------------- Check budget');
-        var failing = false;
+				var failing = false;
 				var includePassed = grunt.config.get('includePassed');
 
-				grunt.log.ok((includePassed ? 'Will include passing tests.': 'Will not include passing tests.') + ' Change this by set grunt config to includePassed to true/false');
+				grunt.log.ok((includePassed ? 'Will include passing tests.' : 'Will not include passing tests.') +
+					' Change this by set grunt config to includePassed to true/false');
 
-        data.budget.forEach(function(result) {
+				data.budget.forEach(function(result) {
 
-          if (result.skipped) {
-            grunt.log.ok('Skipping ' + result.title + ' ' + result.url + ' ' + ' value [' + result.value +']');
-          } else if (result.isOk) {
+					if (result.skipped) {
+						grunt.log.ok('Skipping ' + result.title + ' ' + result.url + ' ' + ' value [' + result.value + ']');
+					} else if (result.isOk) {
 
 						if (includePassed) {
-            	grunt.log.ok('The budget for ' + result.title + ' ' + result.url + ' passed [' + result.value + ']');
+							grunt.log.ok('The budget for ' + result.title + ' ' + result.url + ' passed [' + result.value + ']');
 						}
-          } else {
-            failing = true;
-            grunt.log.error('The budget for ' + result.title + ' ' + result.url + ' failed. ' + result.description);
-          }
-        });
+					} else {
+						failing = true;
+						grunt.log.error('The budget for ' + result.title + ' ' + result.url + ' failed. ' + result.description);
+					}
+				});
 
 				grunt.log.ok('------------------------------------------------- Finished checking budget');
 
-        if (failing) {
-          done(false);
-        } else {
-          done();
-        }
-      }
-    });
-  });
+				if (failing) {
+					done(false);
+				} else {
+					done();
+				}
+			}
+		});
+	});
 };
