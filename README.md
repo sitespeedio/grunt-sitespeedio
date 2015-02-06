@@ -79,6 +79,8 @@ Fetch timings, sending performance metrics to Graphite and performance budgets.
 
 You can choose to collect Navigation Timing and User Timing metrics using real browser. You can choose by using Firefox or Chrome. And you can configure the connection speed ([more info](http://www.sitespeed.io/documentation/#connectionspeed) by choosing between mobile3g, mobile3gfast, cable and native. And choose how many times you want to test each URL (default is 3).
 
+You surely want to combine it with running [Xvfb](https://gist.github.com/nwinkler/f0928740e7ae0e7477dd) to avoid opening the browser. 
+
 ```javascript
 sitespeedio: {
   default: {
@@ -118,7 +120,7 @@ Test your site against a [performance budget](http://timkadlec.com/2013/01/setti
 * WebPageTest [wpt]
 * Google Page Speed insights score [gpsi]
 
-And you can of course combine them.
+And you can and should of course combine them.
 
 #### Performance Budget web performance best practice score
 You can continously test your site against sitespeed.io web performance best practice rules. In this example all scores needs to be better than 90 (100 is the max score).
