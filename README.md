@@ -56,6 +56,22 @@ With these configuration properties set, you can add `sitespeedio` to your defau
 
 With this in place, grunt-sitespeedio will now collect performance metrics for your site.
 
+## The result files
+The result files will automatically be stored in a temporary directory. If you want to change that, use 
+the *resultBaseDir* property, like this:
+
+```javascript
+sitespeedio: {
+  default: {
+    options: {
+      url: 'http://www.sitespeed.io',
+      deepth: 1,
+      resultBaseDir: '/my/new/dir/'
+    }
+  }
+}
+```
+
 ## Use cases
 Fetch timings, sending performance metrics to Graphite and performance budgets.
 
@@ -248,7 +264,7 @@ sitespeedio: {
 ## Options
 sitespeed.io is highly configurable. The grunt-sitespeedio plugin will pass every option to sitespeed, you can see each and every configuration [here](http://www.sitespeed.io/documentation/#theoptions). Each option needs to be called with full name (meaning the same as using **--** for the cli. 
 
-Say for example that you want to change the directory where the result HTML files ends up. Using the cli, you add the flag <code>--resultBaseDir /my/new/dir/</code>
+Say for example that don't want to run the YSlow rules. Using the cli, you add the flag <code>--noYslow</code>
 
 Doing the same with the grunt plugin:
 ```javascript
@@ -257,7 +273,7 @@ sitespeedio: {
     options: {
       url: 'http://www.sitespeed.io',
       deepth: 1,
-      resultBaseDir: '/my/new/dir/'
+      noYslow: true
     }
   }
 }
