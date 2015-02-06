@@ -102,6 +102,8 @@ Test your site against a [performance budget](http://timkadlec.com/2013/01/setti
 * WebPageTest [wpt]
 * Google Page Speed insights score [gpsi]
 
+And you can of course combine them.
+
 #### Performance Budget web performance best practice score
 You can continously test your site against sitespeed.io web performance best practice rules. In this example all scores needs to be better than 90 (100 is the max score).
 
