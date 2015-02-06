@@ -9,7 +9,7 @@
 
 module.exports = function(grunt) {
 
-	grunt.registerMultiTask('sitespeedio', 'Analyze you sites performance', function() {
+	grunt.registerMultiTask('sitespeedio', 'Analyze your sites web performance', function() {
 
 		var tmp = require('temporary');
 		var dir = new tmp.Dir();
