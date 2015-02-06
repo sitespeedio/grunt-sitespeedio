@@ -79,6 +79,8 @@ Fetch timings, sending performance metrics to Graphite and performance budgets.
 
 You can choose to collect Navigation Timing and User Timing metrics using real browser. You can choose by using Firefox or Chrome. And you can configure the connection speed ([more info](http://www.sitespeed.io/documentation/#connectionspeed) by choosing between mobile3g, mobile3gfast, cable and native. And choose how many times you want to test each URL (default is 3).
 
+You surely want to combine it with running [Xvfb](https://gist.github.com/nwinkler/f0928740e7ae0e7477dd) to avoid opening the browser. 
+
 ```javascript
 sitespeedio: {
   default: {
