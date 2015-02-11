@@ -15,7 +15,8 @@ module.exports = function(grunt) {
 		var dir = new tmp.Dir();
 
 		var options = this.options({
-			resultBaseDir: dir.path
+			resultBaseDir: dir.path,
+			html: true
 		});
 
 		var done = this.async();
