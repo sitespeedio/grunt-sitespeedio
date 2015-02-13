@@ -1,3 +1,7 @@
+version 0.1.3
+------------------------
+* New sitespeed.io version that produces HTML output of the budget
+
 version 0.1.2
 ------------------------
 * Call done even when you don't run a perf budget
