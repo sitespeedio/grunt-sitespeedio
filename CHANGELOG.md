@@ -1,3 +1,6 @@
+version 0.1.5 (NOT YET RELEASED)
+------------------------
+
 version 0.1.4
 ------------------------
 * If you use the --file flag, read urls from disk #2
