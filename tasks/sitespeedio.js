@@ -33,23 +33,31 @@ module.exports = function(grunt) {
 				var failing = false;
 				var includePassed = grunt.config.get('includePassed');
 
+				var noPassedTests = 0;
+				var noFailingTests = 0;
+				var noSkippedTests = 0;
+
 				grunt.log.ok((includePassed ? 'Will include passing tests.' : 'Will not include passing tests.') +
 					' Change this by set grunt config to includePassed to true/false');
 
 				data.budget.forEach(function(result) {
 
 					if (result.skipped) {
+						noSkippedTests++;
 						grunt.log.ok('Skipping ' + result.title + ' ' + result.url + ' ' + ' value [' + result.value + ']');
 					} else if (result.isOk) {
-
+						noPassedTests++;
 						if (includePassed) {
 							grunt.log.ok('The budget for ' + result.title + ' ' + result.url + ' passed [' + result.value + ']');
 						}
 					} else {
+						noFailingTests++;
 						failing = true;
 						grunt.log.error('The budget for ' + result.title + ' ' + result.url + ' failed. ' + result.description);
 					}
 				});
+
+				grunt.log.ok('We got ' + noPassedTests + ' passing tests, ' + noFailingTests + ' failing' + ((noSkippedTests>0) ? ' ' + noSkippedTests + ' skipped tests': '.'));
 
 				grunt.log.ok('------------------------------------------------- Finished checking budget');
 
