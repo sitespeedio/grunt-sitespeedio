@@ -1,3 +1,9 @@
+version 0.1.4
+------------------------
+* If you use the --file flag, read urls from disk #2
+* Output number of failing and passing tests in the log #3
+* Bumped to latest sitespeed.io version.
+
 version 0.1.3
 ------------------------
 * New sitespeed.io version that produces HTML output of the budget
