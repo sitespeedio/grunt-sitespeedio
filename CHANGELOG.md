@@ -1,3 +1,6 @@
+version 0.1.6 (NOT_YET_RELEASED)
+------------------------
+
 version 0.1.5
 ------------------------
 * Upgrading sitespeed with fixes for WebPageTest
