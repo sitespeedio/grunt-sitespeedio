@@ -1,5 +1,6 @@
-version 0.1.5 (NOT YET RELEASED)
+version 0.1.5
 ------------------------
+* Upgrading sitespeed with fixes for WebPageTest
 
 version 0.1.4
 ------------------------
