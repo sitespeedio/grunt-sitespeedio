@@ -1,5 +1,6 @@
-version 0.1.6 (NOT_YET_RELEASED)
+version 0.1.6 
 ------------------------
+* Updating sitespeed with a new Browesertime version that can kill Browsermobproxy on Windows
 
 version 0.1.5
 ------------------------
