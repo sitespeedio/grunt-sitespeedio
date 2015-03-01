@@ -1,3 +1,6 @@
+version 0.1.8 (UNRELEASED)
+------------------------
+
 version 0.1.7 
 ------------------------
 * New sitespeed version with new Browsertime that makes Firefox 36 work
