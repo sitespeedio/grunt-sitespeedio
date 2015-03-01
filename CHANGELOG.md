@@ -1,9 +1,10 @@
-version 0.1.7 (NOT YET RELEASED)
+version 0.1.7 
 ------------------------
+* New sitespeed version with new Browsertime that makes Firefox 36 work
 
 version 0.1.6 
 ------------------------
-* Updating sitespeed with a new Browesertime version that can kill Browsermobproxy on Windows
+* Updating sitespeed with a new Browsertime version that can kill Browsermobproxy on Windows
 
 version 0.1.5
 ------------------------
