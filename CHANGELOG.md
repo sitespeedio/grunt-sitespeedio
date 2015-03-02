@@ -1,5 +1,6 @@
-version 0.1.8 (UNRELEASED)
+version 0.1.8 
 ------------------------
+* New Browsertime with configured browser driver timeout
 
 version 0.1.7 
 ------------------------
