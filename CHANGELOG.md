@@ -1,5 +1,6 @@
 unreleased
 ------------------------
+* Cleaned up the structure of the task #5
 
 version 0.1.8 
 ------------------------
