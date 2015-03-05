@@ -282,7 +282,7 @@ An Array with URL:s that you want to test. If you supply an array the exact page
 
 #### options.deepth
 
-Type `int`
+Type `Number`
 Default value: 1 
 
 How deep you want to crawl.
@@ -305,7 +305,7 @@ What browser to use when fetching timings. Choose between *chrome* or *firefox*.
 
 #### options.no
 
-Type `int`
+Type `Number`
 Default value: 3 
 
 How many times each page should be tested when fetching timing.
@@ -328,7 +328,7 @@ The Graphite host.
 
 #### options.graphitePort
 
-Type `int`
+Type `Number`
 Default value: 2003
 
 The Graphite port.
@@ -358,7 +358,7 @@ The secret key if you use the public WPT instance.
 
 #### options.wptConfig
 
-Type `JSON
+Type `JSON`
 Default value: NONE
 
 Will be passed to [runTest](https://github.com/marcelduran/webpagetest-api#user-content-test-works-for-test-command-only) method on the NodeJS WebPageTest API.
