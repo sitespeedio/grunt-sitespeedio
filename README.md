@@ -209,7 +209,7 @@ sitespeedio: {
 #### Performance Budget WebPageTest
 You can setup your performance budget testing using WebPageTest. You a private instance or a [key](http://www.webpagetest.org/getkey.php) to the public version.
 
-If you want to configure specific WebPageTest configuration, do that with the **wptConfig** parameter, it will pass all parameters on to the  [runTest](https://github.com/marcelduran/webpagetest-api#user-content-test-works-for-test-command-only) method that is used in the backend.
+If you want to configure specific WebPageTest configuration, do that with the **wptConfig** parameter, it will pass all parameters on to the [runTest](https://github.com/marcelduran/webpagetest-api#user-content-test-works-for-test-command-only) method that is used in the backend.
 
 In this example, we test two urls nine times, using 3G and Firefox. We will test the median run and make sure the page cannot have more than 60 requests, the total size is not bigger than 1 mb and that we get a speed index score less than 1000.
 
@@ -264,60 +264,109 @@ sitespeedio: {
 ```
 
 ## Options
-sitespeed.io is highly configurable. The grunt-sitespeedio plugin will pass every option to sitespeed, you can see each and every configuration [here](http://www.sitespeed.io/documentation/#theoptions). Each option needs to be called with full name (meaning the same as using **--** for the cli. Here are the most common used options:
+Here are the configuration options.
 
-### options.url
+#### options.url
 
 Type `String`
 Default value: NONE 
 
 The url you want test.
 
-### options.urls
+#### options.urls
 
 Type `Array`
 Default value: NONE 
 
 An Array with URL:s that you want to test. If you supply an array the exact pages will be tested.
 
-### options.deepth
+#### options.deepth
 
 Type `int`
 Default value: 1 
 
 How deep you want to crawl.
 
-### options.resultBaseDir
+#### options.resultBaseDir
 
 Type `String`
 Default value: Temporary dir 
 
 Where the result HTML files will be stored. By default they are stored in a temporary directory.
 
-### options.browser
+### The browser
+
+#### options.browser
 
 Type `String`
 Default value: NONE 
 
 What browser to use when fetching timings. Choose between *chrome* or *firefox*.
 
-### options.no
+#### options.no
 
 Type `int`
 Default value: 3 
 
 How many times each page should be tested when fetching timing.
 
-### options.connection
+#### options.connection
 
 Type `String`
 Default value: 'native'
 
 The connection speed ([more info](http://www.sitespeed.io/documentation/#connectionspeed). Choose between: *mobile3g*, *mobile3gfast*, *cable* or *native*
 
+### Graphite
+
+#### options.graphiteHost
+
+Type `String`
+Default value: NONE
+
+The Graphite host.
+
+#### options.graphitePort
+
+Type `int`
+Default value: 2003
+
+The Graphite port.
+
+#### options.graphiteNamespace
+
+Type `String`
+Default value: sitespeed.io
+
+The namespace of every key sent to Graphite.
+
+### WebPageTest
+
+#### options.wptHost
+
+Type `String`
+Default value: NONE
+
+The host.
+
+#### options.wptKey
+
+Type `String`
+Default value: NONE
+
+The secret key if you use the public WPT instance.
+
+#### options.wptConfig
+
+Type `JSON
+Default value: NONE
+
+Will be passed to [runTest](https://github.com/marcelduran/webpagetest-api#user-content-test-works-for-test-command-only) method on the NodeJS WebPageTest API.
+
+
 ### Can't find the configuration
 
-Say for example that don't want to run the YSlow rules. Using the cli, you add the flag <code>--noYslow</code>
+sitespeed.io is highly configurable. The grunt-sitespeedio plugin will pass every option to sitespeed, you can see each and every configuration [here](http://www.sitespeed.io/documentation/#theoptions). Each option needs to be called with full name (meaning the same as using **--** for the cli. Say for example that don't want to run the YSlow rules. Using the cli, you add the flag <code>--noYslow</code>
 
 Doing the same with the grunt plugin:
 ```javascript
@@ -331,10 +380,3 @@ sitespeedio: {
   }
 }
 ```
-
-
-
-
-
-
-
