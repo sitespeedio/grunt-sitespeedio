@@ -1,8 +1,9 @@
+# CHANGELOG - grunt-sitespeedio
 
 unreleased
 ------------------------
 
-0.1.9
+version 0.1.9
 ------------------------
 * Cleaned up the structure of the task #5
 * New sitespeed.io version 3.1.11 with bugfix for hanging Graphite
