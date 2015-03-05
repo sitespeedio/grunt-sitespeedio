@@ -21,7 +21,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-sitespeedio');
 ```
 
-## The "sitespeedio" task
+## The sitespeedio task
 
 ### Required configuration properties
 
@@ -264,7 +264,58 @@ sitespeedio: {
 ```
 
 ## Options
-sitespeed.io is highly configurable. The grunt-sitespeedio plugin will pass every option to sitespeed, you can see each and every configuration [here](http://www.sitespeed.io/documentation/#theoptions). Each option needs to be called with full name (meaning the same as using **--** for the cli. 
+sitespeed.io is highly configurable. The grunt-sitespeedio plugin will pass every option to sitespeed, you can see each and every configuration [here](http://www.sitespeed.io/documentation/#theoptions). Each option needs to be called with full name (meaning the same as using **--** for the cli. Here are the most common used options:
+
+### options.url
+
+Type `String`
+Default value: NONE 
+
+The url you want test.
+
+### options.urls
+
+Type `Array`
+Default value: NONE 
+
+An Array with URL:s that you want to test. If you supply an array the exact pages will be tested.
+
+### options.deepth
+
+Type `int`
+Default value: 1 
+
+How deep you want to crawl.
+
+### options.resultBaseDir
+
+Type `String`
+Default value: Temporary dir 
+
+Where the result HTML files will be stored. By default they are stored in a temporary directory.
+
+### options.browser
+
+Type `String`
+Default value: NONE 
+
+What browser to use when fetching timings. Choose between *chrome* or *firefox*.
+
+### options.no
+
+Type `int`
+Default value: 3 
+
+How many times each page should be tested when fetching timing.
+
+### options.connection
+
+Type `String`
+Default value: 'native'
+
+The connection speed ([more info](http://www.sitespeed.io/documentation/#connectionspeed). Choose between: *mobile3g*, *mobile3gfast*, *cable* or *native*
+
+### Can't find the configuration
 
 Say for example that don't want to run the YSlow rules. Using the cli, you add the flag <code>--noYslow</code>
 
@@ -280,4 +331,10 @@ sitespeedio: {
   }
 }
 ```
+
+
+
+
+
+
 
