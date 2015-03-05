@@ -315,7 +315,7 @@ How many times each page should be tested when fetching timing.
 Type `String`
 Default value: 'native'
 
-The connection speed ([more info](http://www.sitespeed.io/documentation/#connectionspeed). Choose between: *mobile3g*, *mobile3gfast*, *cable* or *native*
+The connection speed ([more info](http://www.sitespeed.io/documentation/#connectionspeed)). Choose between: *mobile3g*, *mobile3gfast*, *cable* or *native*
 
 ### Graphite
 
