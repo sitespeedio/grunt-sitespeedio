@@ -24,12 +24,14 @@ module.exports = function(grunt) {
 		});
 
 		// special handling for reading file with urls
+    // in sitespeed.io we read the file within the cli,
+    // so we need to do it from outside when we run without the
+    // cli
 		if (options.file) {
 			readFile(options);
 		}
 
 		var done = this.async();
-
 		var Sitespeed = require('sitespeed.io/lib/sitespeed');
 		var sitespeed = new Sitespeed();
 
@@ -52,6 +54,8 @@ module.exports = function(grunt) {
 };
 
 function readFile(options) {
+
+  // absoulute or relative
 	var fullPathToFile = (options.file.charAt(0) === path.sep) ? options.file : path.join(process.cwd(),
 		path.sep, options.file);
 
@@ -60,6 +64,8 @@ function readFile(options) {
 	urls = urls.filter(function(l) {
 		return l.length > 0;
 	});
+  // we clean the file in the config to make
+  // it look that we are feeding with URL array
 	options.urls = urls;
 	options.file = undefined;
 }
