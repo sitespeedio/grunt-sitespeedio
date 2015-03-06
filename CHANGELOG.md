@@ -1,6 +1,7 @@
 
-unreleased
+0.1.10
 ------------------------
+* New sitespeed 3.1.12 with bugfix for faulty requests breaking Graphite
 
 0.1.9
 ------------------------

@@ -37,7 +37,7 @@
     "grunt-contrib-clean": "^0.6.0"
   },
   "dependencies": {
-    "sitespeed.io": "3.1.11",
+    "sitespeed.io": "3.1.12",
     "temporary": "0.0.8"
   },
   "peerDependencies": {
