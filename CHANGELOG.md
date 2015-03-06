@@ -1,9 +1,10 @@
+# CHANGELOG - grunt-sitespeedio
 
 0.1.10
 ------------------------
 * New sitespeed 3.1.12 with bugfix for faulty requests breaking Graphite
 
-0.1.9
+version 0.1.9
 ------------------------
 * Cleaned up the structure of the task #5
 * New sitespeed.io version 3.1.11 with bugfix for hanging Graphite
