@@ -359,10 +359,22 @@ The secret key if you use the public WPT instance.
 #### options.wptConfig
 
 Type `JSON`
-Default value: NONE
+Default value: Check below
 
-Will be passed to [runTest](https://github.com/marcelduran/webpagetest-api#user-content-test-works-for-test-command-only) method on the NodeJS WebPageTest API.
+Will be passed to [runTest](https://github.com/marcelduran/webpagetest-api#user-content-test-works-for-test-command-only) method on the NodeJS WebPageTest API. The default config looks like this:
 
+```json
+{
+pollResults: 10,
+timeout: 600,
+firstViewOnly: false,
+runs: // the number of runs you configure by the n parameter, default 3
+private: true,
+aftRenderingTime: true,
+location: 'Dulles:Chrome',
+video: true
+}
+```
 
 ### Can't find the configuration
 
