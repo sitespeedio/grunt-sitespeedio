@@ -363,7 +363,7 @@ Default value: Check below
 
 Will be passed to [runTest](https://github.com/marcelduran/webpagetest-api#user-content-test-works-for-test-command-only) method on the NodeJS WebPageTest API. The default config looks like this:
 
-```json
+```
 {
 pollResults: 10,
 timeout: 600,
