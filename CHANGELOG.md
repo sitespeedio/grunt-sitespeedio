@@ -1,8 +1,8 @@
 # CHANGELOG - grunt-sitespeedio
 
-unreleased
+0.2.0
 ------------------------
-
+* Based on sitespeed 3.2 and Browsertime 0.9. 
 
 0.1.10
 ------------------------
