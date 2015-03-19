@@ -1,7 +1,7 @@
 {
   "name": "grunt-sitespeedio",
   "description": "Analyze the web performance of your site using Grunt",
-  "version": "0.1.10",
+  "version": "0.2.0",
   "homepage": "http://www.sitespeed.io",
   "author": {
     "name": "Peter Hedenskog",
@@ -38,8 +38,8 @@
     "grunt-contrib-nodeunit": "^0.4.1"
   },
   "dependencies": {
-    "sitespeed.io": "3.1.12",
     "hooker": "^0.2.3",
+    "sitespeed.io": "3.2.0",
     "temporary": "0.0.8"
   },
   "peerDependencies": {

@@ -122,6 +122,12 @@ Test your site against a [performance budget](http://timkadlec.com/2013/01/setti
 
 And you can and should of course combine them.
 
+If you want to include/exclude tests in the output, you can switch that by a Grunt config like:
+
+```
+grunt.config.set('includePassed', true);
+```
+
 #### Performance Budget web performance best practice score
 You can continously test your site against sitespeed.io web performance best practice rules. In this example all scores needs to be better than 90 (100 is the max score).
 
@@ -363,7 +369,7 @@ Default value: Check below
 
 Will be passed to [runTest](https://github.com/marcelduran/webpagetest-api#user-content-test-works-for-test-command-only) method on the NodeJS WebPageTest API. The default config looks like this:
 
-```json
+```
 {
 pollResults: 10,
 timeout: 600,
