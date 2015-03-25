@@ -10,7 +10,7 @@
 var fs = require('fs'),
 	path = require('path'),
 	EOL = require('os').EOL,
-	performance_analyzer = require('./lib/performance_analyzer');
+	budget = require('./lib/budget');
 
 module.exports = function(grunt) {
 
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
 			if (err) {
 				done(false);
 			} else if (data && data.budget) {
-				var isFailing = performance_analyzer.checkBudget(data, grunt);
+				var isFailing = budget.checkBudget(data, grunt);
 				if (isFailing) {
 					done(false);
 				} else {
@@ -70,4 +70,3 @@ function readFile(options) {
 	options.urls = urls;
 	options.file = undefined;
 }
-

@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       tests: ['tmp']
     },
     nodeunit: {
-      all: ['test/test_*.js']
+      all: ['test/test*.js']
     },
 
     // Configuration to be run (and then tested).

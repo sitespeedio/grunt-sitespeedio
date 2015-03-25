@@ -1,18 +1,25 @@
-'use strict'
+/**
+ * grunt-sitespeed.io (http://www.sitespeed.io)
+ * Copyright (c) 2015, Peter Hedenskog, Tobias Lidskog
+ * and other contributors
+ * Released under the Apache 2.0 License
+ */
+'use strict';
 
 exports.checkBudget = function(data, grunt) {
   // lets get the budget!
   grunt.log.ok('------------------------------------------------- Check budget');
   var failing = false;
-  var includePassed = grunt.config.get('includePassed');
   var showFailedOnly = grunt.config.get('showFailedOnly');
 
   var noPassedTests = 0;
   var noFailingTests = 0;
   var noSkippedTests = 0;
 
-  grunt.log.ok((includePassed ? 'Will include passing tests.' : 'Will not include passing tests.') +
-    ' Change this by set grunt config to includePassed to true/false');
+  grunt.log.ok((showFailedOnly ? 'Will show only failing test.' : 'Show both failing and passing tests.') +
+    ' Change this by set Grunt config showFailedOnly to true');
+
+  grunt.log.ok('the showFailedOnly is:' + showFailedOnly);
 
   data.budget.forEach(function(result) {
     if (result.skipped) {
@@ -22,7 +29,7 @@ exports.checkBudget = function(data, grunt) {
           ']');
     } else if (result.isOk) {
       noPassedTests++;
-      if (includePassed && !showFailedOnly) {
+      if (!showFailedOnly) {
         grunt.log.ok('The budget for ' + result.title + ' ' + result.url + ' passed [' + result.value +
           ']');
       }

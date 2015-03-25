@@ -2,7 +2,7 @@
 
 var path = require('path'),
   grunt = require('grunt'),
-  performance_analyzer = require('../tasks/lib/performance_analyzer'),
+  budget = require('../tasks/lib/budget'),
   hooker = require('hooker');
 
 
@@ -55,7 +55,7 @@ exports.tests = {
   test_failed_result: function(test) {
     test.expect(1);
     stdoutEqual(function() {
-      performance_analyzer.checkBudget(getSitespeedioResultData(), grunt)
+      budget.checkBudget(getSitespeedioResultData(), grunt)
     }, function(result) {
       test.equal(result.indexOf('[FAILED]') !== -1, true, "Should print [FAILED] inside message when a result is not ok");
       test.done();
@@ -69,7 +69,7 @@ exports.tests = {
     grunt.config.set("includePassed", true);
 
     stdoutEqual(function() {
-      performance_analyzer.checkBudget(getSitespeedioResultData(), grunt)
+      budget.checkBudget(getSitespeedioResultData(), grunt)
     }, function(result) {
       test.equal(result.indexOf('Skipped') == -1 && result.indexOf('passed') == -1, true, "Should not print any skipped or passed tests when showFailedOnly switch is set");
       test.done();
@@ -82,7 +82,7 @@ exports.tests = {
     grunt.config.set("includePassed", true);
 
     stdoutEqual(function() {
-      performance_analyzer.checkBudget(getSitespeedioResultData(), grunt)
+      budget.checkBudget(getSitespeedioResultData(), grunt)
     }, function(result) {
       test.equal(result.indexOf('Skipping') !== -1 && result.indexOf('passed') !== -1, true, "Should print skipped and passed tests when only includePassed switch is set");
       test.done();
