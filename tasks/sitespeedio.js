@@ -9,7 +9,8 @@
 
 var fs = require('fs'),
 	path = require('path'),
-	EOL = require('os').EOL;
+	EOL = require('os').EOL,
+	budget = require('./lib/budget');
 
 module.exports = function(grunt) {
 
@@ -40,7 +41,7 @@ module.exports = function(grunt) {
 			if (err) {
 				done(false);
 			} else if (data && data.budget) {
-				var isFailing = checkBudget(data, grunt);
+				var isFailing = budget.checkBudget(data, grunt);
 				if (isFailing) {
 					done(false);
 				} else {
@@ -68,45 +69,4 @@ function readFile(options) {
   // it look that we are feeding with URL array
 	options.urls = urls;
 	options.file = undefined;
-}
-
-function checkBudget(data, grunt) {
-
-	// lets get the budget!
-	grunt.log.ok('------------------------------------------------- Check budget');
-	var failing = false;
-	var includePassed = grunt.config.get('includePassed');
-
-	var noPassedTests = 0;
-	var noFailingTests = 0;
-	var noSkippedTests = 0;
-
-	grunt.log.ok((includePassed ? 'Will include passing tests.' : 'Will not include passing tests.') +
-		' Change this by set grunt config to includePassed to true/false');
-
-	data.budget.forEach(function(result) {
-
-		if (result.skipped) {
-			noSkippedTests++;
-			grunt.log.ok('Skipping ' + result.title + ' ' + result.url + ' ' + ' value [' + result.value +
-				']');
-		} else if (result.isOk) {
-			noPassedTests++;
-			if (includePassed) {
-				grunt.log.ok('The budget for ' + result.title + ' ' + result.url + ' passed [' + result.value +
-					']');
-			}
-		} else {
-			noFailingTests++;
-			failing = true;
-			grunt.log.error('The budget for ' + result.title + ' ' + result.url + ' failed. ' + result.description);
-		}
-	});
-
-	grunt.log.ok('We got ' + noPassedTests + ' passing tests, ' + noFailingTests + ' failing' + ((
-		noSkippedTests > 0) ? ' ' + noSkippedTests + ' skipped tests' : '.'));
-
-	grunt.log.ok('------------------------------------------------- Finished checking budget');
-
-	return failing;
 }
