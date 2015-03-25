@@ -163,8 +163,6 @@ You can configure the following
 * iframe
 * doc and docWeight
 
-Note: If you are testing the weight of the page, it is recommended to use **slimerjs** as backend for now, since getting the size using PhantomJS isn't working correctly right now.
-
 ```javascript
 sitespeedio: {
   default: {
