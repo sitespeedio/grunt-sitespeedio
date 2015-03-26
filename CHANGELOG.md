@@ -1,8 +1,11 @@
 # CHANGELOG - grunt-sitespeedio
+0.3.1
+------------------------
+* Upgraded sitespeed.io to 3.2.3 with bug fix for running PhantomJS2 and storing all metrics as JSON
 
 0.3.0
 ------------------------
-* Upgradeed sitespeed.io to 3.2.2
+* Upgraded sitespeed.io to 3.2.2
 * Cleaned up and new config showFailedOnly for showing only failing tests, thanks @zenderol & @bobaaaaa
 
 0.2.0
