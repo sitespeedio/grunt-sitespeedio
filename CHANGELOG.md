@@ -1,4 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
+
+unreleased
+------------------------
+
+
 0.3.1
 ------------------------
 * Upgraded sitespeed.io to 3.2.3 with bug fix for running PhantomJS2 and storing all metrics as JSON
