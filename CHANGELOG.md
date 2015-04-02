@@ -1,8 +1,8 @@
 # CHANGELOG - grunt-sitespeedio
 
-unreleased
+0.3.2
 ------------------------
-
+* Upgraded to sitespeed.io 3.2.4 with bug fixes for perf budget, custom timings and User Timings.
 
 0.3.1
 ------------------------
