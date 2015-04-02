@@ -1,5 +1,8 @@
 # CHANGELOG - grunt-sitespeedio
 
+unreleased
+------------------------
+
 0.3.3
 ------------------------
 * New sitespeed.io version 3.2.4 was broken
