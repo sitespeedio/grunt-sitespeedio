@@ -1,5 +1,8 @@
 # CHANGELOG - grunt-sitespeedio
 
+unreleased
+------------------------
+
 0.3.4
 ------------------------
 * New sitespeed.io version with support for sending request timing from WPT to Graphite and set a URL to a selenium server
