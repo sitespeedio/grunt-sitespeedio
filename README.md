@@ -298,6 +298,13 @@ Default value: Temporary dir
 
 Where the result HTML files will be stored. By default they are stored in a temporary directory.
 
+#### options.requestHeaders
+
+Type `JSON`
+Default value: NONE 
+
+A JSON like `{"name":"value","name2":"value"}`.
+
 ### The browser
 
 #### options.browser
