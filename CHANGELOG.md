@@ -1,5 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
 
+0.3.6 
+------------------------
+* New sitespeed.io version with weight per content type sent to Graphite.
+
 0.3.5
 ------------------------
 * New sitespeed.io version that removes the limit of max 100 domains sent to Graphite, making it possible to post the result JSON and to parse it in individual steps.
