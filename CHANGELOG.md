@@ -1,5 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
 
+0.3.7
+------------------------
+* Upgraded sitespeed.io, the last version had a defect counting the number of requests per domain wrong
+
 0.3.6 
 ------------------------
 * New sitespeed.io version with weight per content type sent to Graphite.
