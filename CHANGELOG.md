@@ -1,5 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
 
+0.3.8
+------------------------
+* New sitespeed.io more bug fixes.
+
 0.3.7
 ------------------------
 * Upgraded sitespeed.io, the last version had a defect counting the number of requests per domain wrong
