@@ -1,5 +1,8 @@
 # CHANGELOG - grunt-sitespeedio
 
+unreleased
+------------------------
+
 0.3.8
 ------------------------
 * New sitespeed.io more bug fixes.
