@@ -39,7 +39,7 @@
     "grunt-contrib-nodeunit": "^0.4.1"
   },
   "dependencies": {
-    "sitespeed.io": "3.4",
+    "sitespeed.io": "3.4.1",
     "temporary": "0.0.8"
   },
   "peerDependencies": {

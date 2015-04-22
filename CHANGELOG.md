@@ -1,5 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
 
+0.4.1
+------------------------
+* Quick fix fixing duplicate dots in graphite graphs
+
 0.4.0
 ------------------------
 * New sitespeed with new graphite URL key structure and ability to define the waitScript
