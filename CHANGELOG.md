@@ -1,5 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
 
+0.5
+------------------------
+* New sitespeed.io release (3.5) with new structure of Graphite keys
+
 0.4.1
 ------------------------
 * Quick fix fixing duplicate dots in graphite graphs
