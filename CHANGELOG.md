@@ -1,5 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
 
+0.6
+------------------------
+* New sitespeed.io with support for metrics and custom scripting in WebPageTest + handling special characters in Graphite Keys
+
 0.5
 ------------------------
 * New sitespeed.io release (3.5) with new structure of Graphite keys
