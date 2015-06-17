@@ -1,5 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
 
+0.6.2
+------------------------
+* New Browsertime/Selenium that fixes installation on Windows
+
 0.6.1
 ------------------------
 * Bug fix: All Graphite keys was't sent correctly for WebPageTes
