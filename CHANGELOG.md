@@ -1,5 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
 
+0.6.3
+------------------------
+* New sitespeed.io with HAR waterfall viewer
+
 0.6.2
 ------------------------
 * New Browsertime/Selenium that fixes installation on Windows
