@@ -1,5 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
 
+0.7.0
+------------------------
+* New sitespeed version
+
 0.6.3
 ------------------------
 * New sitespeed.io with HAR waterfall viewer
