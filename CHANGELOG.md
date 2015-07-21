@@ -1,5 +1,10 @@
 # CHANGELOG - grunt-sitespeedio
 
+0.7.1
+------------------------
+* New sitespeed version that fixes HAR creation and sending metrics to Graphite
+
+
 0.7.0
 ------------------------
 * New sitespeed version
