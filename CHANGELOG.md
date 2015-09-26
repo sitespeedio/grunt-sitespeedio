@@ -1,5 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
 
+0.10.0
+------------------------
+* New sitespeed.io 3.10.0
+
 0.9.1
 ------------------------
 * New sitespeed.io 3.9.1
