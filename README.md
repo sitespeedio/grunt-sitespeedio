@@ -27,13 +27,13 @@ grunt.loadNpmTasks('grunt-sitespeedio');
 
 To start testing pages, you must configure either a start URL for your crawl (yep sitespeed.io will crawl your site for a configurable depth) or an array of specific URL:s that you want to test.
 
-Crawl the site with deepth 1.
+Crawl the site with depth 1.
 ```javascript
 sitespeedio: {
   default: {
     options: {
       url: 'http://www.sitespeed.io',
-      deepth: 1
+      deep: 1
     }
   }
 }
@@ -65,7 +65,7 @@ sitespeedio: {
   default: {
     options: {
       url: 'http://www.sitespeed.io',
-      deepth: 1,
+      deep: 1,
       resultBaseDir: '/my/new/dir/'
     }
   }
@@ -246,14 +246,14 @@ sitespeedio: {
 #### Performance Budget Google Page Speed Insights
 You can match your [Google Page Speed Score](https://developers.google.com/speed/pagespeed/) if your site is accessibble from the internet.
 
-In this example, we will crawl the start url for a deep of 2 and test every URL against the Google Page Speed Score for mobile and will fail if it is lower than 90.
+In this example, we will crawl the start url for a depth of 2 and test every URL against the Google Page Speed Score for mobile and will fail if it is lower than 90.
 
 ```javascript
 sitespeedio: {
   default: {
     options: {
       url: "http://www.sitespeed.io",
-      deepth: 2,
+      deep: 2,
       noYslow: true,
       gpsiKey: 'YOUR_SECRET_GOOGLE_KEY',
       profile: 'mobile',
@@ -284,7 +284,7 @@ Default value: NONE
 
 An Array with URL:s that you want to test. If you supply an array the exact pages will be tested.
 
-#### options.deepth
+#### options.deep
 
 Type `Number`
 Default value: 1 
