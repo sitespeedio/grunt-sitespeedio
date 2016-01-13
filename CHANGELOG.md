@@ -1,4 +1,7 @@
 # CHANGELOG - grunt-sitespeedio
+0.10.2
+------------------------
+* New sitespeed.io 3.11.2 with fixes for spaces in browser names in WPT
 
 0.10.1
 ------------------------
