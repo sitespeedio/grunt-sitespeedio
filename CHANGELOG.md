@@ -1,4 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
+
+0.10.4
+------------------------
+* New sitespeed.io with PhantomJs 2.1
+
 0.10.3
 ------------------------
 * New sitespeed.io 3.11.3 with fix for 3.11.2 for WPT
