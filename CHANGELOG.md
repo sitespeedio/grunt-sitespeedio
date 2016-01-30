@@ -1,4 +1,7 @@
 # CHANGELOG - grunt-sitespeedio
+0.10.5
+------------------------
+* New sitespeed.io with fix for installing PhantomJs
 
 0.10.4
 ------------------------
