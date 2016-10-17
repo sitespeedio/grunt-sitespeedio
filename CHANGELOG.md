@@ -1,4 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
+
+1.0.0
+------------------------
+* We now only support sitespeed.io 4.0 or higher!
+
 0.10.5
 ------------------------
 * New sitespeed.io with fix for installing PhantomJs
@@ -85,7 +90,7 @@
 ------------------------
 * Upgraded sitespeed.io, the last version had a defect counting the number of requests per domain wrong
 
-0.3.6 
+0.3.6
 ------------------------
 * New sitespeed.io version with weight per content type sent to Graphite.
 
@@ -116,7 +121,7 @@
 
 0.2.0
 ------------------------
-* Based on sitespeed 3.2 and Browsertime 0.9. 
+* Based on sitespeed 3.2 and Browsertime 0.9.
 
 0.1.10
 ------------------------
@@ -127,15 +132,15 @@ version 0.1.9
 * Cleaned up the structure of the task #5
 * New sitespeed.io version 3.1.11 with bugfix for hanging Graphite
 
-version 0.1.8 
+version 0.1.8
 ------------------------
 * New Browsertime with configured browser driver timeout
 
-version 0.1.7 
+version 0.1.7
 ------------------------
 * New sitespeed version with new Browsertime that makes Firefox 36 work
 
-version 0.1.6 
+version 0.1.6
 ------------------------
 * Updating sitespeed with a new Browsertime version that can kill Browsermobproxy on Windows
 
@@ -161,6 +166,6 @@ version 0.1.1
 ------------------------
 * Always generate HTML as default
 
-version 0.1.0 
+version 0.1.0
 ------------------------
 * Say hello to the first released version of the sitespeed.io Grunt plugin! Major focus have been on making the (performance) budget up and running.

@@ -1,13 +1,6 @@
-/**
- * grunt-sitespeed.io (http://www.sitespeed.io)
- * Copyright (c) 2015, Peter Hedenskog, Tobias Lidskog
- * and other contributors
- * Released under the Apache 2.0 License
- */
 'use strict';
 
-module.exports = function(grunt) {
-
+module.exports = (grunt) => {
   // Project configuration.
   grunt.initConfig({
     // Before generating any new files, remove any previously-created files.
