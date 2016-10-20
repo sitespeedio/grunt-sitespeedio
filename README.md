@@ -63,7 +63,7 @@ sitespeedio: {
   default: {
     options: {
       urls: ['https://www.sitespeed.io'],
-      outputFolder: '/my/new/dir/'
+      resultBaseDir: '/my/new/dir/'
     }
   }
 }
