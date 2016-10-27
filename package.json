@@ -47,7 +47,7 @@
     "grunt-contrib-nodeunit": "^0.4.1"
   },
   "dependencies": {
-    "sitespeed.io": "4.0.0-beta.5",
+    "sitespeed.io": "4.0.0",
     "lodash.merge": "4.6.0",
     "temporary": "0.0.8"
   },
