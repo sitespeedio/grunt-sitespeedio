@@ -1,5 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
 
+1.0.1
+------------------------
+* Upgraded to 4.0.4
+
 1.0.0
 ------------------------
 * We now only support sitespeed.io 4.0 or higher!
