@@ -1,5 +1,9 @@
 # CHANGELOG - grunt-sitespeedio
 
+1.1.0
+------------------------
+* Upgraded to 4.2.0
+
 1.0.2
 ------------------------
 * Upgraded to 4.0.7
