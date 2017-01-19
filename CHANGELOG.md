@@ -1,5 +1,13 @@
 # CHANGELOG - grunt-sitespeedio
 
+1.2.1
+------------------------
+* Upgraded to 4.3.8 and setting the right node dependency
+
+1.2.0
+------------------------
+* Upgraded to 4.3.0
+
 1.1.0
 ------------------------
 * Upgraded to 4.2.0
