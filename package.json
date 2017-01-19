@@ -1,7 +1,7 @@
 {
   "name": "grunt-sitespeedio",
   "description": "Analyze the web performance of your site using Grunt",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "homepage": "https://www.sitespeed.io",
   "author": {
     "name": "Peter Hedenskog",
