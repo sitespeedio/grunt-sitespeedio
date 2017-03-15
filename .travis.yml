@@ -1,6 +1,9 @@
 language: node_js
 node_js:
-- '4'
 - '6'
+- '7'
 script:
 - npm run travis
+notifications:
+  slack:
+    secure: Tsn2Kg20SRZh0SOy9Q53C+MGMtzGhCr+yQSm5DqXS5qWK4yswgLxU31jAGzICDesVlyt0yNdK+SXxqH1hlGPKKAokUaFfPRUuD6n/SlBbtgEfL5jrcPkwXL+RcVDTTkqBtfCi08WLSfnhYs1SUUyUO5ppSQLErUGvo10BDsx5As=
