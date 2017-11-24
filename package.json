@@ -1,7 +1,7 @@
 {
   "name": "grunt-sitespeedio",
   "description": "Analyze the web performance of your site using Grunt",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "homepage": "https://www.sitespeed.io/documentation/sitespeed.io/continuous-integration/",
   "author": {
     "name": "Peter Hedenskog",
