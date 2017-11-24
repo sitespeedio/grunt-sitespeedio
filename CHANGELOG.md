@@ -1,6 +1,6 @@
 # CHANGELOG - grunt-sitespeedio
 
-2.0.0
+3.0.0
 ------------------------
 ## Added
 * Finally a new release now with the new and shiny 6.0.0
