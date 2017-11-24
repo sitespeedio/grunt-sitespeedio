@@ -1,7 +1,12 @@
 # CHANGELOG - grunt-sitespeedio
+
 2.0.0
 ------------------------
-* Upgraded to 5.4.0.
+## Added
+* Finally a new release now with the new and shiny 6.0.0
+
+## Breaking change
+* Budgets are now configured with budget.config, (instead of just budget). Checkout the example in the readme.
 
 1.4.1
 ------------------------
