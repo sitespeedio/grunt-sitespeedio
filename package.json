@@ -30,7 +30,7 @@
   },
   "license": "Apache-2.0",
   "engines": {
-    "node": ">= 6.9.1"
+    "node": ">= 8.9.0"
   },
   "scripts": {
     "lint": "npm run eslint",
@@ -47,7 +47,7 @@
     "grunt-contrib-nodeunit": "^0.4.1"
   },
   "dependencies": {
-    "sitespeed.io": "5.4.0",
+    "sitespeed.io": "6.0.0",
     "lodash.merge": "4.6.0",
     "temporary": "0.0.8"
   },

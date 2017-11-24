@@ -5,9 +5,9 @@ module.exports = function(grunt) {
     sitespeedio: {
       default: {
         options: {
-          urls: ['https://www.sitespeed.io', 'https://www.sitespeed.io/faq/'],
-          browser: 'firefox',
+          urls: ['https://www.sitespeed.io', 'https://www.sitespeed.io/documentation/'],
           browsertime: {
+	    browser: 'chrome',
             connectivity: 'cable',
             iterations: 5,
           },
