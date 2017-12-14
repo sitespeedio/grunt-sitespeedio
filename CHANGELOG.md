@@ -1,4 +1,8 @@
 # CHANGELOG - grunt-sitespeedio
+3.1.0
+------------------------
+## Added
+* Upgraded to  6.1.2
 
 3.0.0
 ------------------------
