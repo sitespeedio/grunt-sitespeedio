@@ -84,9 +84,9 @@ sitespeedio: {
     options: {
       urls: ['https://www.sitespeed.io', 'https://www.sitespeed.io/faq/'],
       browsertime: {
-        browser: 'firefox'
+        browser: 'firefox',
         connectivity: 'native',
-        iterations: 5,
+        iterations: 5
       }
     }
   }
